@@ -1,3 +1,135 @@
-menu_bar {
-	margin: 0;
+body {
+    margin: 0;
+    background-color: white;
+    color: white;
+}
+
+.hero-banner {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.hero-banner h1 {
+    position: absolute;
+    color: #f90388;
+    font-family: "Merriweather";
+    font-size: 100px;
+    margin-left: 80px;
+    margin-top: 300px;
+    animation: fade-in 11s ease;
+    transition: 1s ease;
+}
+
+.hero-banner h2 {
+    position: absolute;
+    color: #08c3e6;
+    font-family: "Open Sans";
+    font-size: 30px;
+    margin-left: 150px;
+    margin-top: 430px;
+    animation: fade-in 8s ease-in;
+}
+
+header h1 {
+    color: #f90388;
+    font-family: "Merriweather";
+    font-size: 30px;
+    text-align: center;
+    animation: fade-in 11s ease;
+    transition: 1s ease;
+}
+
+header h2 {
+    margin-bottom: 100px;
+    color: #08c3e6;
+    font-family: "Open Sans";
+    font-size: 100px;
+    text-align: center;
+    animation: fade-in 8s ease-in;
+}
+
+nav {
+    position: fixed;
+    top:0;
+    right: 0;
+    font-family: "Open Sans";
+    margin-top: 60vh;
+    margin-right: 50px;
+    padding: 30px;
+    z-index: 3;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    animation: fade-in 5s ease-in;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #08c3e6;
+    margin-left: 5px;
+}
+
+header + img {
+    margin-left: 20px;
+}
+
+footer {
+    padding-left: 20px;
+    color: black;
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+
+footer h3 {
+    color: #f90388;
+}
+
+footer p {
+    color: #08c3e6;
+}
+
+footer ul {
+    width: 70%;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("fonts/Merriweather/Merriweather.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100 { opacity: 1; }
+}
+
+@keyframes floating {
+    0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
