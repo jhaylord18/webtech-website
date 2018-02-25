@@ -3,12 +3,27 @@ body {
     background-color: #95FFFE;
 }
 
+.title {
+    top: 0;
+    height: 100px;
+    background-color: black;
+}
+
+.title h1 {
+    text-align: center;
+    color: #95FFFE;
+    font-family: "Open Sans";
+}
+
 .menu_bar ul {
+    width: 100%;
+    top: 100px;
+    position: fixed;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #00ccc9;
 }
 
 .menu_bar li {
@@ -24,9 +39,9 @@ body {
 }
 
 .menu_bar li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #009996;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #009996;
 }
